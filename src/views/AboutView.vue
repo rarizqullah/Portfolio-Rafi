@@ -9,7 +9,7 @@
         >
           About Me &nbsp;
           <div
-            class="h-[1px] w-32 bg-teal-600 md:w-96 aos-init aos-animate"
+            class="h-[1px] w-32 bg-teal-50 md:w-96 aos-init aos-animate"
             data-aos="zoom-in-left"
             data-aos-duration="600"
           ></div>
@@ -31,7 +31,7 @@
             &nbsp; &nbsp; &nbsp; Hi everyone! My name is Rafi Risqullah Putra.
             I'm a web developer from Magelang, Central Java. 6th - semester
             student of the Satya Wacana Christian University Bachelor of
-            Information System Program with GPA of 3.82 (semester 7).
+            Information System Program with GPA of 3.82
           </p>
           <p class="mb-3 fadein-left fadeins-2">
             &nbsp; &nbsp; &nbsp; Experienced in system analyst, data Analyst,

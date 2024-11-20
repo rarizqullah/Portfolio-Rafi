@@ -48,7 +48,7 @@ export default {
         >
           <h4>Past Project Experience</h4>
           <h4
-            class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-teal-600"
+            class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-gray-700"
           >
             Explore the projects I've worked on so far
           </h4>

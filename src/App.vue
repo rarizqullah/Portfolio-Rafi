@@ -10,18 +10,20 @@
       >
         <button @click="redirectToHome" class="flex">
           <span
-            class="self-center text-lg text-teal-600 font-semibold whitespace-nowrap fadein-bot hover:text-teal-400"
+            class="self-center text-lg text-white font-semibold whitespace-nowrap fadein-bot hover:text-gray-700"
             >Rafi R Putra</span
           >
         </button>
         <div class="flex md:order-2 fadein-bot">
-          <a href="https://github.com/rarizqullah"
-            ><img
-              class="w-9 rounded-full"
-              src="https://seeklogo.com/images/G/github-logo-2E3852456C-seeklogo.com.png"
-              alt="github"
-          /></a>
+          <a href="https://www.linkedin.com/in/rafirp" target="_blank" rel="noopener noreferrer">
+            <img
+              class="w-9 rounded-full linkedin-img hover:scale-110 hover:shadow-lg transition-transform transition-shadow duration-300"
+              src="https://e7.pngegg.com/pngimages/802/636/png-clipart-social-media-computer-icons-linkedin-logo-social-media-text-business-thumbnail.png"
+              alt="LinkedIn"
+            />
+          </a>
         </div>
+
         <div
           class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
           id="mobile-menu-3"
@@ -159,7 +161,7 @@ nav a.router-link-exact-active::after {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: #39a9ae;
+  background-color: #364142;
 }
 
 nav a.router-link-exact-active:hover {

@@ -3,8 +3,9 @@
     class="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-[65vh] md:min-h-[80vh]"
   >
     <div class="space-y-2 text-center md:text-left px-10">
-      <p class="text-teal-400">Hello, I'm</p>
-      <h1 class="text-4xl font-bold md:text-5xl text-white fadein-up">
+      <p class="text-white">Hello, I'm</p>
+
+      <h1 class="text-4xl font-bold md:text-4xl text-white fadein-up">
         Rafi Risqullah Putra
       </h1>
       <div class="py-2">
@@ -36,7 +37,7 @@
         height="300"
         decoding="async"
         data-nimg="1"
-        class="w-10/12 md:h-auto rounded-full border-4 border-teal-700 pict"
+        class="w-10/12 md:h-auto rounded-full border-4 border-black pict"
         src="https://www.dropbox.com/scl/fi/abjry8b5g2vjarbi497jg/fotoport.jpg?rlkey=0dzjcl9ts4v2m3fcm30shrfsc&st=0fztdol7&raw=1"
       />
     </div>
@@ -74,7 +75,9 @@ export default {
       this.txt = this.isDeleting
         ? fullTxt.substring(0, this.txt.length - 1)
         : fullTxt.substring(0, this.txt.length + 1);
-      typewriter.innerHTML = `<span class="wrap bg-gradient-to-r from-teal-200 via-teal-300 to-teal-700 bg-clip-text text-transparent">${this.txt}</span>`;
+      typewriter.innerHTML = `<span class="wrap bg-gradient-to-r from-black via-gray-500 to-black bg-clip-text text-transparent">${this.txt}</span>
+
+`;
 
       let that = this;
       let delta = 200 - Math.random() * 100;

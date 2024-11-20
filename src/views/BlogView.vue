@@ -1,33 +1,37 @@
 <template>
-  <div class="container mx-auto p-3 md:p-8 flex justify-center items-center">
-    <div class="flex flex-col relative w-full md:w-2/3 gap-8">
-      <!-- Konten untuk Sertifikat -->
-      <div
-        class="certificate-section flex flex-col gap-4 md:px-20 fade-zoom-up"
-      >
-        <!-- Sertifikat Pertama -->
-        <h1 class="text-2xl font-bold text-white">Sertifikat Penghargaan</h1>
 
-        <!-- Deskripsi singkat -->
-        <p class="text-teal-400">Coursera Google Data Analytics</p>
-
-        <!-- Gambar sertifikat -->
+<header>
         <div
-          class="certificate-frame border-4 border-gray-300 shadow-lg rounded-lg overflow-hidden"
+          class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col"
         >
+          <h4>certificate of appreciation</h4>
+          <h4
+            class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-gray-700"
+          >
+            Explore the projects I've worked on so far
+          </h4>
+        </div>
+      </header>
+
+  <div class="container mx-auto p-3 md:p-6 flex justify-center items-center fade-in">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Sertifikat Pertama -->
+      <div class="certificate-card bg-black text-white rounded-lg shadow-lg overflow-hidden">
+        <div class="card-header p-4">
+          <p class="text-gray-400  text-sm">Coursera Google Data Analytics</p>
+        </div>
+        <div class="card-image">
           <img
             :src="certificateImage"
             alt="Sertifikat Penghargaan"
-            class="certificate-image"
+            class="object-contain w-full h-40"
           />
         </div>
-
-        <!-- Tombol aksi (Read More) -->
-        <div>
+        <div class="card-footer p-4">
           <a
             href="https://coursera.org/share/8183c5355171ad152e948ae4f23ab818"
             target="_blank"
-            class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 transition duration-300"
+            class="bg-gray-800 text-white px-3 py-2 text-sm rounded-md hover:bg-teal-600 transition"
           >
             Read More
           </a>
@@ -35,27 +39,22 @@
       </div>
 
       <!-- Sertifikat Kedua -->
-      <div
-        class="certificate-section flex flex-col gap-4 md:px-20 fade-zoom-up"
-      >
-        <h1 class="text-2xl font-bold text-white">Sertifikat Penghargaan</h1>
-        <p class="text-teal-400">Database Design and Programming with SQL</p>
-
-        <div
-          class="certificate-frame border-4 border-gray-300 shadow-lg rounded-lg overflow-hidden"
-        >
+      <div class="certificate-card bg-black text-white rounded-lg shadow-lg overflow-hidden">
+        <div class="card-header p-4">
+          <p class="text-gray-400 text-sm">Database Design and Programming with SQL</p>
+        </div>
+        <div class="card-image">
           <img
             :src="certificateImageTwo"
             alt="Sertifikat Penghargaan"
-            class="certificate-image"
+            class="object-contain w-full h-40"
           />
         </div>
-
-        <div>
+        <div class="card-footer p-4">
           <a
             href="https://coursera.org/share/another-cert-link"
             target="_blank"
-            class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 transition duration-300"
+            class="bg-gray-800 text-white px-3 py-2 text-sm rounded-md hover:bg-teal-600 transition"
           >
             Read More
           </a>
@@ -63,27 +62,22 @@
       </div>
 
       <!-- Sertifikat Ketiga -->
-      <div
-        class="certificate-section flex flex-col gap-4 md:px-20 fade-zoom-up"
-      >
-        <h1 class="text-2xl font-bold text-white">Sertifikat Penghargaan</h1>
-        <p class="text-teal-400">Database Programming with PL/SQL</p>
-
-        <div
-          class="certificate-frame border-4 border-gray-300 shadow-lg rounded-lg overflow-hidden"
-        >
+      <div class="certificate-card bg-black text-white rounded-lg shadow-lg overflow-hidden">
+        <div class="card-header p-4">
+          <p class="text-gray-400 text-sm">Database Programming with PL/SQL</p>
+        </div>
+        <div class="card-image">
           <img
             :src="certificateImageTree"
             alt="Sertifikat Penghargaan"
-            class="certificate-image"
+            class="object-contain w-full h-40"
           />
         </div>
-
-        <div>
+        <div class="card-footer p-4">
           <a
             href="https://coursera.org/share/another-cert-link"
             target="_blank"
-            class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 transition duration-300"
+            class="bg-gray-800 text-white px-3 py-2 text-sm rounded-md hover:bg-teal-600 transition"
           >
             Read More
           </a>
@@ -97,44 +91,49 @@
 export default {
   data() {
     return {
-      certificateImage: require("@/assets/sertifikat_coursera.png"), // Path gambar sertifikat pertama
-      certificateImageTwo: require("@/assets/sertifikat_oracle1.png"), // Path gambar sertifikat kedua
-      certificateImageTree: require("@/assets/sertifikat_oracle2.png"), // Path gambar sertifikat ketiga
+      certificateImage: require("@/assets/sertifikat_coursera.png"),
+      certificateImageTwo: require("@/assets/sertifikat_oracle1.png"),
+      certificateImageTree: require("@/assets/sertifikat_oracle2.png"),
     };
   },
 };
 </script>
 
 <style scoped>
-/* Styling untuk memastikan konten berada di tengah layar secara horizontal dan vertikal */
 .container {
-  min-height: 100vh; /* Pastikan tinggi kontainer penuh layar */
+  margin-top: 80px; /* Adjust to fit the height of your navbar */
 }
 
-.certificate-frame {
-  margin-top: 10px;
-  width: 100%;
-  height: auto;
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
 
-.certificate-image {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.certificate-section {
-  background-color: #25272a; /* Tambahkan warna latar belakang */
-  padding: 20px;
-  border-radius: 10px;
+.certificate-card {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Styling untuk tombol */
-a {
-  transition: background-color 0.3s ease;
+.card-header {
+  background-color: #000000;
 }
 
-a:hover {
-  background-color: #38b2ac;
+.card-image img {
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.card-footer {
+  text-align: center;
 }
 </style>
