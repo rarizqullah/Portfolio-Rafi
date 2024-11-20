@@ -2,18 +2,18 @@
 
 <header>
         <div
-          class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col"
+          class="text-2xl font-bold text-white mb-10 md:py-10 fadein-bot title-section flex items-center justify-center flex-col"
         >
           <h4>certificate of appreciation</h4>
           <h4
-            class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-gray-700"
+            class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-gray-500"
           >
-            Explore the projects I've worked on so far
+          Successes I've Achieved So Far
           </h4>
         </div>
       </header>
 
-  <div class="container mx-auto p-3 md:p-6 flex justify-center items-center fade-in">
+  <div class="container mx-auto p-3 md:p-1 flex justify-center items-center fade-in">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Sertifikat Pertama -->
       <div class="certificate-card bg-black text-white rounded-lg shadow-lg overflow-hidden">
@@ -52,7 +52,7 @@
         </div>
         <div class="card-footer p-4">
           <a
-            href="https://coursera.org/share/another-cert-link"
+            href="https://drive.google.com/file/d/1kU5LW6XCMHwz86MQ82vZEjcqsTti2zBH/view?usp=sharing"
             target="_blank"
             class="bg-gray-800 text-white px-3 py-2 text-sm rounded-md hover:bg-teal-600 transition"
           >
@@ -75,7 +75,7 @@
         </div>
         <div class="card-footer p-4">
           <a
-            href="https://coursera.org/share/another-cert-link"
+            href="https://drive.google.com/file/d/1ML6K5sZzuSI_HU0elZ60-04i61sDSZ4y/view?usp=sharing"
             target="_blank"
             class="bg-gray-800 text-white px-3 py-2 text-sm rounded-md hover:bg-teal-600 transition"
           >
